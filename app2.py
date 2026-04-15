@@ -89,8 +89,7 @@ def process_vision(image, cvd_type, gamma, contrast, brightness):
 
 # 4. SIDEBAR UI
 with st.sidebar:
-    st.header("🎨 Theme & UI")
-    # Change 'bg.jpg' to your actual file path
+    
     try:
         side_op = st.slider("Sidebar Opacity", 0, 100, 40)
         set_design_theme('bg.jpg', side_op)
